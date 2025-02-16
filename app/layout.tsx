@@ -1,12 +1,13 @@
-import type React from "react"
-import "./globals.css"
-import type { Metadata } from "next"
+import type React from "react";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "プロパゲート - Webサイト制作",
   description: "最短2週間、スマホでも管理できるWebサイト制作サービス",
-    generator: 'v0.dev'
-}
+  generator: 'v0.dev'
+};
 
 export default function RootLayout({
   children,
@@ -15,11 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Toaster />
+      </body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'

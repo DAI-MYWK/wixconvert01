@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import Hero from "@/components/hero"
+import ContactSection from "@/components/contact-section";
 import LogoCloud from "@/components/logo-cloud"
 import Services from "@/components/services"
 import Features from "@/components/features"
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <ContactSection />
         <LogoCloud />
         <Services />
         <Features />
